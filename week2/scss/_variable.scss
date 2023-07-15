@@ -1,0 +1,76 @@
+// 字體變數 : 預設 16px
+$font-size-base: 1rem !default;
+// 128/64/24/20/16
+$font-size: (
+  1: $font-size-base * 8,
+  2: $font-size-base * 4,
+  3: $font-size-base * 1.5,
+  4: $font-size-base * 1.25,
+  5: $font-size-base,
+);
+
+@each $name, $size in $font-size {
+  .fs-#{$name} {
+    font-size: $size;
+  }
+}
+
+// 推擠變數 : 預設 16px
+$spacer: 1rem;
+// 4/16/20/24/32/36/40/72/160
+$spacer-type: (
+  1: $spacer * 0.25,
+  2: $spacer,
+  3: $spacer * 1.25,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.25,
+  7: $spacer * 2.5,
+  8: $spacer * 4.5,
+  9: $spacer * 10,
+);
+
+@each $name, $size in $spacer-type {
+  // margin
+  .mt-#{$name} {
+    margin-top: $size;
+  }
+  .mb-#{$name} {
+    margin-bottom: $size;
+  }
+  .ms-#{$name} {
+    margin-left: $size;
+  }
+  .me-#{$name} {
+    margin-right: $size;
+  }
+  .mx-#{$name} {
+    margin-left: $size;
+    margin-right: $size;
+  }
+  .my-#{$name} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+  // padding
+  .pt-#{$name} {
+    padding-top: $size;
+  }
+  .pb-#{$name} {
+    padding-bottom: $size;
+  }
+  .ps-#{$name} {
+    padding-left: $size;
+  }
+  .pe-#{$name} {
+    padding-right: $size;
+  }
+  .px-#{$name} {
+    padding-left: $size;
+    padding-right: $size;
+  }
+  .py-#{$name} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+}
