@@ -588,14 +588,6 @@ a {
   flex-wrap: wrap;
 }
 
-.position-relative {
-  position: relative;
-}
-
-.position-absolute {
-  position: absolute;
-}
-
 nav {
   background: #000;
 }
@@ -664,8 +656,6 @@ header .header-content button {
   background: #000;
   border-radius: 32px;
   color: white;
-  left: 0;
-  bottom: 0;
   cursor: pointer;
 }
 
