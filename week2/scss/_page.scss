@@ -1,0 +1,104 @@
+
+// nav
+nav {
+  background: #000;
+  li:nth-child(3) {
+    margin-bottom: -24px;
+  }
+}
+
+// header
+header {
+  background: #000;
+  .header-content {
+    width: 636px;
+    h1 {
+      color: #00FFA3;
+      text-align: end;
+    }
+    button {
+      font-family: 'Bruno Ace SC', cursive;
+      padding: 12px 24px;
+      border-radius: 32px;
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-10px) scale(1.1);
+      }
+    }
+  }
+}
+
+// introduction
+.introduction {
+  background-image: url(../img/background-img.png);
+  .intro-content {
+    width: 526px;
+  }
+}
+
+// about
+.about {
+  color: black;
+  .card-group {
+    width: 636px;
+    .card {
+      width: 306px;
+      border: 1px solid #E3E3E3;
+      margin-bottom: 24px;
+      padding: 16px;
+      box-shadow: 4px 4px 4px 0px #00000014;
+    }
+  }
+  .about-content {
+    width: 526px;
+  }
+}
+
+// contact
+.contact {
+  background: #000;
+  padding: 96px 0;
+  .contact-link img {
+    border-radius: 40px;
+    box-shadow: 4px 4px 8px 0px #00000014;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0px 0px 16px 3px #9094FFE5;
+    }
+  }
+}
+
+// projects
+.projects {
+  color: black;
+  h2 {
+    max-width: 746px;
+    margin-left: auto;
+  }
+  .projects-title {
+    margin-bottom: 28px;
+    button {
+      font-family: 'Bruno Ace SC', cursive;
+      padding: 12px 24px;
+      background: #000;
+      border-radius: 32px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-10px) scale(1.1);
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  background: #000;
+  p {
+    text-align: center;
+  }
+}
