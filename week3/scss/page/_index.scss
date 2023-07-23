@@ -1,7 +1,7 @@
 // nav 
 nav {
   .logo {
-    background-image: url('/week3/img/Layout-page/logo-white.png');
+    background-image: url('../img/Layout-page/logo-white.png');
     background-size: contain;
     width: 80px;
     height: 49px;
@@ -52,11 +52,11 @@ nav {
 
 // header 
 header {
-  background-image: url('/week3/img/Index-page/home-header.png');
+  background-image: url('../img/Index-page/home-header.png');
   background-size: cover;
   height: 100vh;
   @include pad {
-    background-image: url('/week3/img/Index-page/home-header-sm.png');
+    background-image: url('../img/Index-page/home-header-sm.png');
   }
   .header-wrap {
     height: 100%;
@@ -154,13 +154,13 @@ header {
 
 // design-wrap
 .design-wrap {
-  background-image: url('/week3/img/Index-page/index-bg.png');
+  background-image: url('../img/Index-page/index-bg.png');
   background-size: cover;
   @include pad {
-    background-image: url('/week3/img/Index-page/index-bg-md.png');
+    background-image: url('../img/Index-page/index-bg-md.png');
   }
   @include mobile {
-    background-image: url('/week3/img/Index-page/index-bg-sm.png');
+    background-image: url('../img/Index-page/index-bg-sm.png');
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -183,13 +183,13 @@ header {
     }
     .desing-img-1 {
       @include mobile {
-        content: url('/week3/img/Index-page/home-section4-1-sm.png');
+        content: url('../img/Index-page/home-section4-1-sm.png');
         width: 100%;
       }
     }
     .desing-img-2 {
       @include mobile {
-        content: url('/week3/img/Index-page/home-section4-2-sm.png');
+        content: url('../img/Index-page/home-section4-2-sm.png');
         width: 100%;
       }
     }

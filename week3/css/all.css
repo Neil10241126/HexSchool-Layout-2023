@@ -587,7 +587,7 @@ a {
 }
 
 nav .logo {
-  background-image: url("/week3/img/Layout-page/logo-white.png");
+  background-image: url("../img/Layout-page/logo-white.png");
   background-size: contain;
   width: 80px;
   height: 49px;
@@ -638,13 +638,13 @@ nav .icon {
 }
 
 header {
-  background-image: url("/week3/img/Index-page/home-header.png");
+  background-image: url("../img/Index-page/home-header.png");
   background-size: cover;
   height: 100vh;
 }
 @media (max-width: 992px) {
   header {
-    background-image: url("/week3/img/Index-page/home-header-sm.png");
+    background-image: url("../img/Index-page/home-header-sm.png");
   }
 }
 header .header-wrap {
@@ -747,17 +747,17 @@ header .header-wrap button:hover {
 }
 
 .design-wrap {
-  background-image: url("/week3/img/Index-page/index-bg.png");
+  background-image: url("../img/Index-page/index-bg.png");
   background-size: cover;
 }
 @media (max-width: 992px) {
   .design-wrap {
-    background-image: url("/week3/img/Index-page/index-bg-md.png");
+    background-image: url("../img/Index-page/index-bg-md.png");
   }
 }
 @media (max-width: 767px) {
   .design-wrap {
-    background-image: url("/week3/img/Index-page/index-bg-sm.png");
+    background-image: url("../img/Index-page/index-bg-sm.png");
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -780,13 +780,13 @@ header .header-wrap button:hover {
 }
 @media (max-width: 767px) {
   .design-wrap .design-item .desing-img-1 {
-    content: url("/week3/img/Index-page/home-section4-1-sm.png");
+    content: url("../img/Index-page/home-section4-1-sm.png");
     width: 100%;
   }
 }
 @media (max-width: 767px) {
   .design-wrap .design-item .desing-img-2 {
-    content: url("/week3/img/Index-page/home-section4-2-sm.png");
+    content: url("../img/Index-page/home-section4-2-sm.png");
     width: 100%;
   }
 }
