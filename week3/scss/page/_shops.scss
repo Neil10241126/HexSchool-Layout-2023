@@ -1,0 +1,213 @@
+// nav 
+.nav {
+  .logo {
+    background-image: url('../img/Layout-page/logo-white.png');
+    background-size: contain;
+    width: 80px;
+    height: 49px;
+    display: block;
+    @include hide-text;
+    @include mobile {
+      margin-left: 12px;
+    }
+  }
+  .navigation a, .logo {
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @include mobile {
+    padding-bottom: 0;
+    .container {
+      flex-direction: column;
+      align-items:  flex-start;
+      padding: 0;
+    }
+    .navigation {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 16px;
+      text-align: center;
+      li {
+        width: 50%;
+        a {
+          display: block;
+          font-size: 16px;
+          margin: 0;
+          padding: 12px 0;
+          border: 1px solid map-get($color-type, light);
+          &:hover {
+            background: map-get($color-type, light);
+            border: 1px solid map-get($color-type, primary);
+            color: map-get($color-type, primary);
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// shop-wrap 
+.shop-wrap {
+  padding-top: 96px;
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h2 {
+    border-left: 8px solid map-get($color-type, primary);
+    @include mobile {
+      font-size: map-get($font-size-type, 4);
+    }
+  }
+  .form-select {
+    margin-bottom: 40px;
+    @include mobile {
+      margin-top: map-get($spacer-type, 3);
+      margin-bottom: map-get($spacer-type, 3);
+    }
+    label {
+      @include mobile {
+        font-size: map-get($font-size-type, 6);
+        margin-right: 8px;
+      }
+    }
+    select {
+      width: 304px;
+      color: #495057;
+      @include mobile {
+        max-width: 75%;
+      }
+    }
+  }
+  ul {
+    @include pad {
+      justify-content: space-between;
+    }
+  }
+  .shop-card {
+    width: 32%;
+    color: #212529;
+    h3 {
+      border: 1px solid #00000020;
+    }
+    ul {
+      border: 1px solid #00000020;
+    }
+    &:nth-child(-n+3) {
+      margin-bottom: map-get($spacer-type, 5);
+      @include pad {
+        margin-bottom: map-get($spacer-type, 3);
+      }
+    }
+    &:nth-child(2), &:nth-child(5) {
+      margin-left: 2%;
+      margin-right: 2%;
+      @include pad {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    i {
+      margin-right: 11px;
+    }
+    @include pad {
+      width: 49%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  button {
+    font-size: 19px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+// footer
+.footer {
+  a {
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @include mobile {
+    padding-top: map-get($spacer-type, 3);
+  }
+  .footer-wrap {
+    border-bottom: 1px solid white;
+    @include mobile {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  .footer-nav {
+    @include mobile {
+      display: none;
+    }
+  }
+  .footer-link li {
+    @include pad {
+      &:nth-child(2) {
+        margin-left: map-get($spacer-type, 2);
+        margin-right: map-get($spacer-type, 2);
+      }
+    }
+  }
+  img {
+    width: 48px;
+    height: 48px;
+    @include pad {
+      width: 40px;
+      height: 40px;
+    }
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .footer-body {
+    @include mobile {
+      padding-bottom: map-get($spacer-type, 3);
+    }
+    i {
+      margin-right: 20px;
+      @include mobile {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+    a {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  .copy-item {
+    @include mobile {
+      flex-direction: column;
+      padding-top: map-get($spacer-type, 3);
+      padding-bottom: map-get($spacer-type, 3);
+    }
+    .copy-text {
+      @include mobile {
+        flex-direction: column;
+      }
+      a {
+       font-size: 14px;
+       @include mobile {
+         font-size: map-get($font-size-type, 6);
+         margin: 8px 0 0 0;
+       }
+     }
+    }
+  }
+}

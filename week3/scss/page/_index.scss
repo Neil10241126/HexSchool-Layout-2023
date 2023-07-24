@@ -1,5 +1,5 @@
 // nav 
-nav {
+.nav {
   .logo {
     background-image: url('../img/Layout-page/logo-white.png');
     background-size: contain;
@@ -7,6 +7,9 @@ nav {
     height: 49px;
     display: block;
     @include hide-text;
+    @include mobile {
+      margin-left: 12px;
+    }
   }
   .navigation a, .logo {
     transition: all 0.3s;
@@ -14,17 +17,17 @@ nav {
       opacity: 0.7;
     }
   }
-  .icon {
-    display: none;
-  }
   @include mobile {
+    padding-bottom: 0;
+    .container {
+      flex-direction: column;
+      align-items:  flex-start;
+      padding: 0;
+    }
     .navigation {
-      position: absolute;
       flex-wrap: wrap;
       width: 100%;
-      top: 100%;
       margin-top: 16px;
-      margin-left: -12px;
       text-align: center;
       li {
         width: 50%;
@@ -42,9 +45,6 @@ nav {
           }
         }
       }
-    }
-    .icon {
-      display: block;
     }
   }
 }

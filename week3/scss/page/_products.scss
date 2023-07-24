@@ -1,0 +1,266 @@
+// nav 
+.nav {
+  .logo {
+    background-image: url('../img/Layout-page/logo-white.png');
+    background-size: contain;
+    width: 80px;
+    height: 49px;
+    display: block;
+    @include hide-text;
+    @include mobile {
+      margin-left: 12px;
+    }
+  }
+  .navigation a, .logo {
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @include mobile {
+    padding-bottom: 0;
+    .container {
+      flex-direction: column;
+      align-items:  flex-start;
+      padding: 0;
+    }
+    .navigation {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 16px;
+      text-align: center;
+      li {
+        width: 50%;
+        a {
+          display: block;
+          font-size: 16px;
+          margin: 0;
+          padding: 12px 0;
+          border: 1px solid map-get($color-type, light);
+          &:hover {
+            background: map-get($color-type, light);
+            border: 1px solid map-get($color-type, primary);
+            color: map-get($color-type, primary);
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .products-banner 
+.proudcts-banner {
+  .container {
+    @include pad {
+      padding: 0;
+    }
+  }
+  .products-nav {
+    li {
+      width: 33.33%;
+      border: 1px solid #DCDCDC;
+      a {
+        transition: all 0.3s;
+        border-bottom: 8px solid transparent;
+        &:hover, &:focus {
+          border-bottom: 8px solid map-get($color-type, primary);
+        }
+        @include pad {
+          padding-top: map-get($spacer-type, 2);
+          padding-bottom: map-get($spacer-type, 2);
+          font-size: map-get($font-size-type, 4);
+        }
+        @include mobile {
+          font-size: map-get($font-size-type, 6);
+        }
+      }
+    }
+  }
+  .nav-img-1 {
+    @include pad {
+      content: url('/img/Products-page/Optical-page/product-header-sm-1.png');
+      width: 100vh;
+    }
+  }
+  .nav-img-2 {
+    @include pad {
+      content: url('/img/Products-page/Optical-page/product-header-sm-2.png');
+      width: 100vh;
+    }
+  }
+}
+
+// products-item
+.products-item {
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h2 {
+    font-size: 42px;
+    @include mobile {
+      font-size: map-get($font-size-type, 4);
+    }
+  }
+  span {
+    font-size: 32px;
+    @include mobile {
+      font-size: map-get($font-size-type, 4);
+    }
+  }
+  .products-list {
+    @include mobile {
+      margin-top: map-get($spacer-type, 3);
+    }
+    li {
+      width: 24%;
+      @include pad {
+        width: 49%;
+      }
+      @include mobile {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-child(-n+8) {
+        margin-bottom: map-get($spacer-type, 6);
+        @include pad {
+          margin-bottom: 40px;
+        }
+        @include mobile {
+          margin-bottom: map-get($spacer-type, 3);
+        }
+      }
+      &:nth-last-child(-n+2) {
+        @include pad {
+          display: none;
+        }
+      }
+      &:nth-last-child(-n+7) {
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  }
+  button {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-col-1 {
+    background: #5F3E2D;
+  }
+  .btn-col-2 {
+    background: #B75929;
+  }
+}
+
+// pagination 
+.pagination {
+  @include mobile {
+    padding-bottom: 64px;
+  }
+  a {
+    font-size: 18px;
+    padding: 12px 16px;
+    color: #555555;
+    border: 1px solid #555555;
+    background: #F2F2F2;
+    &:hover, &:focus {
+      background: #000;
+      color: white;
+    }
+    @include mobile {
+      font-size: map-get($font-size-type, 6);
+      padding: 12px 14px;
+    }
+  }
+}
+
+// footer
+.footer {
+  a {
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @include mobile {
+    padding-top: map-get($spacer-type, 3);
+  }
+  .footer-wrap {
+    border-bottom: 1px solid white;
+    @include mobile {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  .footer-nav {
+    @include mobile {
+      display: none;
+    }
+  }
+  .footer-link li {
+    @include pad {
+      &:nth-child(2) {
+        margin-left: map-get($spacer-type, 2);
+        margin-right: map-get($spacer-type, 2);
+      }
+    }
+  }
+  img {
+    width: 48px;
+    height: 48px;
+    @include pad {
+      width: 40px;
+      height: 40px;
+    }
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .footer-body {
+    @include mobile {
+      padding-bottom: map-get($spacer-type, 3);
+    }
+    i {
+      margin-right: 20px;
+      @include mobile {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+    a {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  .copy-item {
+    @include mobile {
+      flex-direction: column;
+      padding-top: map-get($spacer-type, 3);
+      padding-bottom: map-get($spacer-type, 3);
+    }
+    .copy-text {
+      @include mobile {
+        flex-direction: column;
+      }
+      a {
+       font-size: 14px;
+       @include mobile {
+         font-size: map-get($font-size-type, 6);
+         margin: 8px 0 0 0;
+       }
+     }
+    }
+  }
+}
